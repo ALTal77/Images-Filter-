@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fulter-project{
+    width: 80vw;
+    background: #2c2828;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.img-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+img,canvas{
+    max-width: 40vw;
+    max-height: 60vh;
+}
+.upload input{
+    display: none;
+}
+.upload label{
+    color: white;
+    border: dashed 2px white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/*     RANGES     */
+
+.ranges-side ul li,.ranges-side ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+}
+.ranges-side ul li label{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+.ranges-side ul li:last-child{
+    justify-content: space-around;
+    flex-direction: row;
+    cursor: pointer;
+}
+.ranges-side ul li a,span{
+    border-radius: 5px;
+    background: rgb(7, 82, 7);
+    padding: 10px 20px;
+}
+input[type=range] {
+
+    cursor:grab;
+}
