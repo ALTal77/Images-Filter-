@@ -22,6 +22,12 @@ img,canvas{
     max-width: 40vw;
     max-height: 60vh;
 }
+.buttons{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+}
 .upload input{
     display: none;
 }
@@ -57,4 +63,25 @@ img,canvas{
 input[type=range] {
 
     cursor:grab;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .fulter-project {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+    .ranges-side ul {
+        padding: 0 20px;
+    }
 }

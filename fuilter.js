@@ -1,5 +1,6 @@
 let image=document.getElementById('img');
 let upload=document.getElementById('upload');
+let deletee=document.getElementById('Delete');
 let saturate=document.getElementById('saturate');
 let constract=document.getElementById('constract');
 let brightness=document.getElementById('brightness');
@@ -85,3 +86,33 @@ function resetPic() {
     ctx.filter = "none";
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
   }
+// delete button
+console.log(deletee);
+
+deletee.onclick = () => {
+    deletee.onclick = () => {
+    // Reset all filters
+    resetPic();
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Reset canvas size to avoid extra space
+    canvas.width = 0;
+    canvas.height = 0;
+
+    // Hide the download and reset buttons
+    download.style.display = 'none';
+    reset.style.display = 'none';
+
+    // Remove the image source
+    image.src = "";
+
+    // Hide the image element (prevent empty space)
+    image.style.display = "none";
+
+    // Reset the file input so user can upload a new image
+    upload.value = "";
+};
+
+};
